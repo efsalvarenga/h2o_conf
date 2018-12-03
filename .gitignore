@@ -4,3 +4,4 @@
 .Ruserdata
 h2o_conf.Rproj
 packrat/lib*/
+.DS_Store
