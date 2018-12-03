@@ -1,0 +1,197 @@
+---
+title: "Volve and H2O"
+author: "Estevao Alvarenga"
+date: "03/12/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+```
+
+## Load Volve production dataset
+
+I will use Equinor's Volve dataset, available at https://data.equinor.com/dataset/Volve (you will need to create an account for this).
+
+The code below defines the place I have saved the production dataset.
+
+```{r}
+OD_root <- '~/OneDrive - Shell/'
+file0   <- 'Volve production data.xlsx'
+path0   <- paste0(OD_root,'Prodev/volve/Production_data/',file0)
+```
+
+Now I import and organise the column names in the datasets.
+
+```{r}
+prod_data_1 <- readxl::read_excel(path0,
+                                  sheet = 1)
+prod_data_2 <- readxl::read_excel(path0,
+                                  sheet = 2,
+                                  skip = 1)
+
+colnames(prod_data_2) <- names(readxl::read_excel(path0,
+                                                  sheet = 2,
+                                                  n_max = 1)) %>%
+  make.names()
+
+prod_data_2 <- prod_data_2 %>%
+  mutate(On.Stream = as.numeric(On.Stream),
+         Oil = as.numeric(Oil),
+         Gas = as.numeric(Gas),
+         Water = as.numeric(Water),
+         GI = as.numeric(GI),
+         WI = as.numeric(WI))
+
+
+head(prod_data_1)
+names(prod_data_1)
+str(prod_data_1)
+summary(prod_data_1)
+
+head(prod_data_2)
+names(prod_data_2)
+str(prod_data_2)
+summary(prod_data_2)
+```
+
+Sheet 1 contains daily production data, while sheet 2 cointains monthly aggregates. Because of what I want to accomplish with this exercise, I will from now focus on the daily data.
+
+## Exploring Volve's daily production data
+
+Firstly, lets see the number and types of wells we have:
+
+```{r}
+prod_data_1 %>%
+  select(WELL_BORE_CODE, NPD_WELL_BORE_NAME, WELL_TYPE, FLOW_KIND, BORE_WI_VOL) %>%
+  distinct()
+```
+
+So I guess 15/9-F-1C and 15/9-F-5 were converted at some point, but why they keep the `FLOW_KIND` variable as `production` I still do not know. Also the `BORE_WI_VOL` is a bit odd right now.
+
+Lets look at the volumes over time for well 15/9-F-5.
+
+```{r}
+prod_data_1 %>%
+  filter(NPD_WELL_BORE_NAME == '15/9-F-5') %>%
+  select(DATEPRD, NPD_WELL_BORE_NAME, WELL_TYPE,
+         BORE_OIL_VOL, BORE_GAS_VOL, BORE_WAT_VOL) %>%
+  gather(fluid, volume, -DATEPRD, -NPD_WELL_BORE_NAME, -WELL_TYPE) %>%
+  ggplot(aes(x = DATEPRD, y = volume)) +
+  geom_point() +
+  facet_wrap(~fluid + WELL_TYPE, ncol = 2, scales = 'free_y')
+```
+
+I find it a bit odd to have production and water injection in the same year on the same well.
+
+```{r}
+prod_data_1_summary <- prod_data_1 %>%
+  group_by(WELL_BORE_CODE, NPD_WELL_BORE_NAME, WELL_TYPE, FLOW_KIND) %>%
+  summarise(number_of_rows = n(),
+            min_date = min(DATEPRD),
+            max_date = max(DATEPRD))
+```
+
+By looking at the count of rows on each class, I guess the WI and OP tag were misplaced. I will continue with this assumtion for now.
+
+```{r}
+prod_data_1 %>%
+  group_by(NPD_WELL_BORE_NAME, FLOW_KIND) %>%
+  summarise(number_of_rows = n(),
+            min_date = min(DATEPRD),
+            max_date = max(DATEPRD))
+```
+
+So this is a 6P2I project. Still a bit odd the two injectors start 5 months before the two first producers.
+
+To make my plots better to visualise, I will convert all fluids to kboe.
+
+```{r}
+prod_data_1_boe <- prod_data_1 %>%
+  mutate(qg_boe = BORE_GAS_VOL / 170000,
+         qo_boe = BORE_OIL_VOL * 6.29,
+         qw_boe = BORE_WAT_VOL * 6.29)
+```
+
+Now I will make one plot per well.
+
+```{r}
+prod_data_1_boe %>%
+  select(DATEPRD, NPD_WELL_BORE_NAME,
+         qg_boe, qo_boe, qw_boe) %>%
+  gather(fluid, volume, -DATEPRD, -NPD_WELL_BORE_NAME) %>%
+  ggplot(aes(x = DATEPRD, y = volume)) +
+  geom_point(aes(colour = fluid)) +
+  facet_wrap(~NPD_WELL_BORE_NAME, ncol = 1, scales = 'free_y')
+```
+
+Ok, after looking at this plot, I will go back to explore the monthly aggregates, to come up with an hypothesis of what is happening here.
+
+First I will create similar conversions as for the daily data, in addition to calculating daily averages per month, then I will plot.
+```{r}
+
+days_in_month <- data.frame(
+  Month         = 1:12,
+  days_in_month = c(31,28,31,30,31,30,31,31,30,31,30,31)
+)
+
+prod_data_2_boe <- prod_data_2 %>%
+  left_join(days_in_month) %>%
+  mutate(qgp_boepd = Gas / 170000 / days_in_month,
+         qo_boepd  = Oil * 6.29 / days_in_month,
+         qwp_boepd = Water * 6.29 / days_in_month,
+         qgi_boepd = GI / 170000 / days_in_month,
+         qwi_boepd = WI * 6.29 / days_in_month,
+         mth_yr    = as.Date(paste(Year, Month, '01', sep = '-')))
+
+prod_data_2_boe %>%
+  select(mth_yr, Wellbore.name,
+         qgp_boepd, qo_boepd, qwp_boepd,
+         qwi_boepd, qgi_boepd) %>%
+  gather(fluid, volume, -mth_yr, -Wellbore.name) %>%
+  ggplot(aes(x = mth_yr, y = volume)) +
+  geom_point(aes(colour = fluid)) +
+  facet_wrap(~Wellbore.name, ncol = 1, scales = 'free_y')
+```
+
+This looks a bit better :).
+
+Now let's see how this looks aggregating on the field level.
+
+```{r}
+field_2_boe <- prod_data_2_boe %>%
+  select(mth_yr,
+         qgp_boepd, qo_boepd, qwp_boepd,
+         qwi_boepd, qgi_boepd) %>%
+  gather(fluid, volume, -mth_yr) %>%
+  group_by(mth_yr, fluid) %>%
+  summarise(fullfield_vol = sum(volume, na.rm = TRUE))
+
+field_2_boe %>%
+  ggplot(aes(x = mth_yr, y = fullfield_vol)) +
+  geom_line(aes(colour = fluid))
+```
+
+## Defining the problem
+
+I will try to forecast the oil production for the F-12 well based on the production and injection rates during the period the project had 2P2I.
+
+```{r}
+proj2p2i <- prod_data_2_boe %>%
+  filter(mth_yr < as.Date('2013-07-01')) %>%
+  select(mth_yr, Wellbore.name, On.Stream,
+         qgp_boepd, qo_boepd, qwp_boepd,
+         qwi_boepd, qgi_boepd)
+
+proj2p2i %>%
+  gather(fluid, volume, -mth_yr, -Wellbore.name, -On.Stream) %>%
+  ggplot(aes(x = mth_yr, y = volume)) +
+  geom_point(aes(colour = fluid)) +
+  facet_wrap(~Wellbore.name, ncol = 1, scales = 'free_y')
+```
+
