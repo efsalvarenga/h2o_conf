@@ -13,6 +13,7 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 library(RcppRoll)
+library(h2o)
 ```
 
 ## Load Volve production dataset
@@ -236,7 +237,6 @@ names(make2p2i) <- make.names(names(make2p2i))
 
 Save for driverless AI ** mind test will be empty**:
 
-
 ```{r}
 split_point <- nrow(make2p2i) * 1
 make2p2i_train <- make2p2i[1:split_point,]
@@ -246,6 +246,13 @@ write.csv(make2p2i_train, 'make2p2i_train.csv',
           row.names = FALSE)
 write.csv(make2p2i_test, 'make2p2i_test.csv',
           row.names = FALSE)
+```
 
+## Runing local h2o cluster
+
+Starting cluster:
+
+```{r}
+h2o.init()
 ```
 
