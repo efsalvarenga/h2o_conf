@@ -182,9 +182,13 @@ field_2_boe %>%
 
 I will try to forecast the oil production for the F-12 well based on the production and injection rates during the period the project had 2P2I.
 
+** I removed the filter as the Driverless AI has a hard minimum of 100 rows (I know it won't behave well as I expected for the 2p2i... I haven't changed the names below, so everything will be referred as 2p2i) **
+
 ```{r}
-proj2p2i <- prod_data_2_boe %>%
-  filter(mth_yr < as.Date('2013-07-01'))
+proj2p2i <- prod_data_2_boe 
+
+
+  # filter(mth_yr < as.Date('2013-07-01'))
 
 proj2p2i %>%
   select(mth_yr, Wellbore.name, On.Stream,
@@ -206,7 +210,7 @@ proj2p2i_cums <- proj2p2i %>%
   select(-NPDCode, -Year, - Month, -days_in_month) %>%
   gather(var, val, -mth_yr, -Wellbore.name) %>%
   filter(var %in% c('Oil','Gas','Water','WI')) %>%
-  na.omit() %>%
+  # na.omit() %>%
   group_by(Wellbore.name, var) %>%
   mutate(cums  = cumsum(val)) %>%
   select(-val) %>%
@@ -230,9 +234,18 @@ make2p2i <- left_join(proj2p2i, proj2p2i_cums) %>%
 names(make2p2i) <- make.names(names(make2p2i))
 ```
 
-Save for driverless AI:
+Save for driverless AI ** mind test will be empty**:
+
+
 ```{r}
-write.csv(make2p2i, 'make2p2i.csv',
+split_point <- nrow(make2p2i) * 1
+make2p2i_train <- make2p2i[1:split_point,]
+make2p2i_test  <- make2p2i[split_point:nrow(make2p2i),]
+
+write.csv(make2p2i_train, 'make2p2i_train.csv',
           row.names = FALSE)
+write.csv(make2p2i_test, 'make2p2i_test.csv',
+          row.names = FALSE)
+
 ```
 
