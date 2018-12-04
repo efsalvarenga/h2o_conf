@@ -12,6 +12,7 @@ library(readxl)
 library(dplyr)
 library(tidyr)
 library(ggplot2)
+library(RcppRoll)
 ```
 
 ## Load Volve production dataset
@@ -183,33 +184,55 @@ I will try to forecast the oil production for the F-12 well based on the product
 
 ```{r}
 proj2p2i <- prod_data_2_boe %>%
-  group_by(Wellbore.name) %>%
-  mutate(Np = ifelse(is.na(cumsum(Oil)), 0, cumsum(Oil)),
-         Gp_i = ifelse(is.na(cumsum(Gas)), 0, cumsum(Gas)) -
-           ifelse(is.na(cumsum(GI)), 0, cumsum(GI)),
-         Wp_i = ifelse(is.na(cumsum(Water)), 0, cumsum(Water)) -
-           ifelse(is.na(cumsum(WI)), 0, cumsum(WI))) %>%
-  ungroup() %>%
-  filter(mth_yr < as.Date('2013-07-01')) %>%
-  mutate() %>%
-  select(mth_yr, Wellbore.name, On.Stream,
-         qgp_boepd, qo_boepd, qwp_boepd,
-         qwi_boepd, qgi_boepd,
-         Np, Gp_i, Wp_i)
+  filter(mth_yr < as.Date('2013-07-01'))
 
 proj2p2i %>%
+  select(mth_yr, Wellbore.name, On.Stream,
+         qgp_boepd, qo_boepd, qwp_boepd,
+         qwi_boepd, qgi_boepd) %>%
   gather(fluid, volume, -mth_yr, -Wellbore.name, -On.Stream) %>%
   ggplot(aes(x = mth_yr, y = volume)) +
-  geom_point(aes(colour = fluid)) +
+  geom_line(aes(colour = fluid)) +
   facet_wrap(~Wellbore.name, ncol = 1, scales = 'free_y')
 ```
 
 ## Feature engineering
 
+The code below will create the following variables:
+* cumulative volumes Np (oil), Gp (gas), Wp (water produced), Wi (water injected)
+
 ```{r}
-proj2p2i %>%
-  group_by(Wellbore.name) %>%
-  mutate(Np = cumsum(qo_boepd) * 30)
-  gather(fluid, volume, -mth_yr, -Wellbore.name, -On.Stream) %>%
+proj2p2i_cums <- proj2p2i %>%
+  select(-NPDCode, -Year, - Month, -days_in_month) %>%
+  gather(var, val, -mth_yr, -Wellbore.name) %>%
+  filter(var %in% c('Oil','Gas','Water','WI')) %>%
+  na.omit() %>%
+  group_by(Wellbore.name, var) %>%
+  mutate(cums  = cumsum(val)) %>%
+  select(-val) %>%
+  spread(var, cums)
+names(proj2p2i_cums)[3:6] <- c('Gp','Np','Wp','Wi')
+```
+
+Still to implement rolling windows (use `RcppRoll`).
+
+## Make
+
+```{r}
+make2p2i <- left_join(proj2p2i, proj2p2i_cums) %>%
+  select(Wellbore.name, mth_yr, On.Stream,
+         qo_boepd, qwp_boepd, qgp_boepd, qwi_boepd,
+         Np, Wp, Gp, Wi) %>%
+  gather(var, val, -Wellbore.name, -mth_yr) %>%
+  mutate(combvar = paste(Wellbore.name, var, sep = '_')) %>%
+  select(-Wellbore.name, -var) %>%
+  spread(combvar, val)
+names(make2p2i) <- make.names(names(make2p2i))
+```
+
+Save for driverless AI:
+```{r}
+write.csv(make2p2i, 'make2p2i.csv',
+          row.names = FALSE)
 ```
 
