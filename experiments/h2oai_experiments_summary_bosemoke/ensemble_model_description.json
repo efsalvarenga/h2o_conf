@@ -1,0 +1,57 @@
+{
+    "index": {
+        "0": 0
+    },
+    "Type": {
+        "0": "XGBoostModel"
+    },
+    "Split Type": {
+        "0": "None"
+    },
+    "Model Weight": {
+        "0": 1
+    },
+    "booster": {
+        "0": "gbtree"
+    },
+    "max_depth": {
+        "0": 9
+    },
+    "max_leaves": {
+        "0": 32
+    },
+    "subsample": {
+        "0": 1
+    },
+    "colsample_bytree": {
+        "0": 0.8
+    },
+    "tree_method": {
+        "0": "gpu_hist"
+    },
+    "grow_policy": {
+        "0": "lossguide"
+    },
+    "random_state": {
+        "0": 667368647
+    },
+    "learning rate": {
+        "0": 0.02
+    },
+    "Target Transformer": {
+        "0": "unit_box"
+    },
+    "Fitted features": {
+        "0": 2
+    },
+    "Fit iterations ": {
+        "0": [
+            328
+        ]
+    },
+    "Fit tree/step count ": {
+        "0": [
+            328
+        ]
+    }
+}

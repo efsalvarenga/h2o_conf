@@ -1,0 +1,50 @@
+{
+    "Scorer": {
+        "0": "GINI",
+        "1": "R2",
+        "2": "MSE",
+        "3": "RMSLE",
+        "4": "RMSPE",
+        "5": "MAE",
+        "6": "MER",
+        "7": "MAPE",
+        "8": "SMAPE",
+        "9": "RMSE"
+    },
+    "Final (best individual) validation scores +/- standard deviation": {
+        "0": "N/A",
+        "1": "N/A",
+        "2": "N/A",
+        "3": "N/A",
+        "4": "N/A",
+        "5": "N/A",
+        "6": "N/A",
+        "7": "N/A",
+        "8": "N/A",
+        "9": "248.14 +/- 7.993"
+    },
+    "Optimized": {
+        "0": "",
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": "",
+        "7": "",
+        "8": "",
+        "9": "*"
+    },
+    "Better score is": {
+        "0": "higher",
+        "1": "higher",
+        "2": "lower",
+        "3": "lower",
+        "4": "lower",
+        "5": "lower",
+        "6": "lower",
+        "7": "lower",
+        "8": "lower",
+        "9": "lower"
+    }
+}

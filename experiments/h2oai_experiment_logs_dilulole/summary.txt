@@ -1,0 +1,10 @@
+Experiment: dilulole, 2018-12-04 10:48, 1.4.1
+  Settings: 10/4/8, seed=545305355, GPUs enabled
+  Train data: make2p2i_train.csv None
+  Validation data: N/A
+  Test data: N/A
+System specs: Docker/Linux, 60 GB, 4 CPU cores, 1/1 GPU
+  Max memory usage: 0 GB, 0 GB GPU
+Recipe: AutoDL (0 iterations, 8 individuals)
+Experiment failed: Training data must contain at least 100 rows
+

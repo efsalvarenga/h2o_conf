@@ -1,0 +1,14 @@
+{
+    "Relative Importance": {
+        "0": 1.0,
+        "1": 0.8547460306
+    },
+    "Feature": {
+        "0": "11_X15_9_F_12_qgp_boepd",
+        "1": "135_InteractionMul:X15_9_F_12_On_Stream:X15_9_F_12_qgp_boepd"
+    },
+    "Description": {
+        "0": "X15_9_F_12_qgp_boepd (original)",
+        "1": "[X15_9_F_12_On_Stream] * [X15_9_F_12_qgp_boepd]"
+    }
+}

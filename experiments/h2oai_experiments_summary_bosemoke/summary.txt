@@ -1,0 +1,20 @@
+Experiment: bosemoke, 2018-12-04 12:40, 1.4.1
+  Settings: 10/4/8, seed=667368647, GPUs enabled
+  Train data: make2p2i_train.csv (104, 43)
+  Validation data: N/A
+  Test data: N/A
+  Target column: X15_9_F_12_qo_boepd (regression, unit_box-transformed)
+System specs: Docker/Linux, 60 GB, 4 CPU cores, 1/1 GPU
+  Max memory usage: 1.02 GB, 0.0856 GB GPU
+Recipe: AutoDL (123 iterations, 8 individuals)
+  Validation scheme: time-based, 1 internal holdout
+  Feature engineering: 1541 features tested (2 selected)
+Timing:
+  Data preparation: 2.84 secs
+  Model and feature tuning: 525.93 secs (83 of 86 models trained)
+  Feature evolution: 721.73 secs (160 of 168 models trained)
+  Final pipeline training: 4.33 secs (1 model trained)
+Validation score: RMSE = 569.04 +/- 13.292 (baseline)
+Validation score: RMSE = 248.14 +/- 7.993 (final pipeline)
+Test score:       RMSE = N/A
+

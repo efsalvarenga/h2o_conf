@@ -1,0 +1,25 @@
+Experiment: bosemoke
+
+ACCURACY [10/10]:
+- Training data size: *112 rows, 64 cols*
+- Feature evolution: *[XGBoost, LightGBM]*, *4 time-based validation splits*
+- Final pipeline: *[XGBoost, LightGBM]*
+
+TIME [4/10]:
+- Feature evolution: *8 individuals*, up to *126 iterations*
+- Early stopping: After *5* iterations of no improvement
+
+INTERPRETABILITY [8/10]:
+- Feature pre-pruning strategy: FS
+- Monotonicity constraints: enabled
+- Feature engineering search space (where applicable): [Date, FrequencyEncoding, Identity, Interactions, IsHoliday, Lags, Text]
+
+[XGBoost, LightGBM] models to train:
+- Target transform tuning: *72*
+- Model and feature tuning: *960*
+- Feature evolution: *2016*
+- Final pipeline: *1*
+
+Estimated max. total memory usage:
+- Feature engineering: *8.0MB*
+- GPU XGBoost: *32.0MB*

@@ -1,0 +1,117 @@
+# Copyright 2018 H2O.ai; Proprietary License;  -*- encoding: utf-8 -*-
+
+-------------------------------------------------------------------------------
+
+                H2O DRIVERLESS AI EXPERIMENT LOGFILE (ANONYMIZED)
+
+
+                           PROPRIETARY LICENSE -
+
+                USE OF ANY PART OF THIS SOFTWARE REQUIRES A VALID,
+                ONGOING LICENSE AGREEMENT WITH H2O.AI.
+
+                Please contact sales@h2o.ai for more information.
+
+-------------------------------------------------------------------------------
+
+
+PLEASE READ THIS H2O.AI DRIVERLESS AI EVALUATION AGREEMENT ('AGREEMENT') CAREFULLY BEFORE USING THE EVALUATION SOFTWARE OFFERED BY H2O.AI, INC. ('H2O.AI').  BY CLICKING THE 'AGREE' (OR SIMILAR) BUTTON ON AN ONLINE ORDER FORM, BY USING THE EVALUATION SOFTWARE IN ANY MANNER, OR BY SIGNING AN ORDER FORM WHICH REFERENCES THESE EVALUATION TERMS AND CONDITIONS (AS APPLICABLE) YOU OR THE ENTITY YOU REPRESENT ('LICENSEE') AGREE THAT YOU HAVE READ AND AGREE TO BE BOUND BY AND A PARTY TO THE TERMS AND CONDITIONS OF THIS AGREEMENT TO THE EXCLUSION OF ALL OTHER TERMS, YOU REPRESENT AND WARRANT THAT YOU ARE AUTHORIZED TO BIND LICENSEE.  IF THE TERMS OF THIS AGREEMENT ARE CONSIDERED AN OFFER, ACCEPTANCE IS EXPRESSLY LIMITED TO SUCH TERMS.
+
+H2O.AI DRIVERLESS AI EVALUATION AGREEMENT
+
+  WHEREAS, H2O.ai is willing to supply, within the protection of a confidential relationship, the software, services and related materials provided in connection with this Agreement (collectively, the 'Evaluation Software') to Licensee solely for internal evaluation purposes and not for any production use ('Evaluation');
+
+  NOW, THEREFORE, in consideration of the foregoing and the mutual covenants hereinafter set forth, the parties hereby agree as follows:
+      1. Use of Evaluation Software. Subject to the terms of this Agreement, H2O.ai hereby grants to Licensee a personal, nontransferable, nonsublicensable, nonexclusive, revocable license to access and use the Evaluation Software only in accordance with all documentation supplied by H2O.ai solely for Licensee's internal Evaluation purposes during the term of this Agreement. H2O.ai shall at all times retain all title to and ownership of the Evaluation Software and all intellectual property rights relating thereto. Licensee agrees to use the Evaluation Software only in the ordinary course of its Evaluation. Licensee shall not (and shall not allow any third party to): (a) decompile, disassemble, or otherwise reverse engineer any portion of the Evaluation Software; (b) remove, alter or obscure any product identification, copyright or other notices contained on or in the Evaluation Software; (c) disclose, provide, distribute, resell, lease, lend or allow access to the Evaluation Software to any third party; (d) use the Evaluation Software for timesharing or service bureau purposes, or otherwise for the benefit of any third party; (e) copy, modify, adapt or create a derivative work of any part of the Evaluation Software; (f) use the Evaluation Software in excess of any limitations provided by H2O.ai;(g) use the Evaluation Software to help develop any competitive product or service; (h) remove or export the Evaluation Software or any direct product thereof from the United States. H2O
+      2. Feedback. If Licensee proposes any modifications, derivatives, enhancements or improvements to the Evaluation Software ('Feedback'), then notwithstanding anything else, Licensee hereby grants H2O.ai a perpetual, irrevocable, royalty free, fully paid-up, sub-licensable, right and license to use, display, reproduce, distribute and otherwise fully exploit such Feedback for any purposes.
+      3. Warning. THE EVALUATION SOFTWARE MAY CONTAIN A ROUTINE THAT CAUSES THE EVALUATION SOFTWARE TO CEASE PROPER FUNCTIONING AFTER A CERTAIN PERIOD OF TIME. THIS MAY OCCUR BEFORE OR AFTER TERMINATION OF THE LICENSE, SO LICENSEE MUST BE PREPARED AT ALL TIMES AND MAY NOT RELY ON THE EVALUATION SOFTWARE
+      4. Warranty Disclaimer.  The parties acknowledge that the Evaluation Software are provided 'AS IS' and may not be functional on any machine or in any environment. H2O.AI DISCLAIMS ALL WARRANTIES RELATING TO THE EVALUATION SOFTWARE, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY WARRANTIES AGAINST INFRINGEMENT OF THIRD-PARTY RIGHTS, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+      5. Limitation of Remedies and Damages. H2O.AI SHALL NOT BE RESPONSIBLE OR LIABLE TO THE OTHER PARTY WITH RESPECT TO ANY SUBJECT MATTER OF THIS AGREEMENT UNDER ANY CONTRACT, NEGLIGENCE, STRICT LIABILITY OR OTHER THEORY (A) FOR LOSS OR INACCURACY OF DATA OR COST OF PROCUREMENT OF SUBSTITUTE GOODS, SERVICES OR TECHNOLOGY, (B) FOR ANY SPECIAL, INDIRECT, INCIDENTAL, PUNITIVE, RELIANCE, OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED TO LOSS OF REVENUES AND LOSS OF PROFITS, OR (C) FOR DAMAGES OF ANY KIND WHATSOEVER ARISING OUT OF THIS AGREEMENT IN EXCESS OF $100. H2O.AI SHALL NOT BE RESPONSIBLE FOR ANY MATTER BEYOND ITS REASONABLE CONTROL.
+      6. Nonassignability. Although fully assignable and transferable by H2O.ai, neither the rights nor the obligations arising under this Agreement are assignable or transferable by Licensee, and any such attempted assignment or transfer shall be void and without effect.
+      7. Controlling Law, Attorneys' Fees and Severability. This Agreement shall be governed by and construed in accordance with the laws of the State of California without regard to the conflicts of laws provisions therein. In any action to enforce this Agreement the prevailing party will be entitled to costs and attorneys' fees. In the event that any of the provisions of this Agreement shall be held by a court or other tribunal of competent jurisdiction to be unenforceable, such provisions shall be limited or eliminated to the minimum extent necessary so that this Agreement shall otherwise remain in full force and effect and enforceable.
+      8. Entire Agreement. This Agreement constitutes the entire agreement between the parties pertaining to the subject matter hereof.  Any modifications of this Agreement must be in writing and signed by both parties.
+      9. Term; Termination. This Agreement shall become effective upon Licensee's first access to or use of the Evaluation Software ('Start Date'). This Agreement may be terminated by either party for any reason or no reason upon written notice to the other party, or immediately upon notice of any breach by Licensee of the provisions of this Agreement, and in any case will terminate twenty-one (21) days from the Start Date, unless extended by H2O.ai in writing.  Upon termination, the license granted hereunder will terminate and Licensee shall promptly cease accessing the Evaluation Software, and shall return any and all documents, notes and other materials regarding the Evaluation Software to H2O.ai, including, without limitation, all copies and extracts of the foregoing, but the terms of this Agreement will otherwise remain in effect.
+
+GDSVF&H\2472254.1
+
+
+2018-12-04 10:48:04,885 C:  D:81.4GB M:55.6GB 13686 INFO   : Overriding variable with experiment-specific settings: enable_tensorflow = false
+
+2018-12-04 10:48:04,887 C:  D:81.4GB M:55.6GB 13686 INFO   : Overriding variable with experiment-specific settings: override_lag_sizes = 
+
+2018-12-04 10:48:04,913 C:▁ D:81.4GB M:55.6GB 13686 INFO   : H2O Driverless AI Version: 1.4.1
+2018-12-04 10:48:04,915 C:  D:81.4GB M:55.6GB 13686 INFO   : Selected Accuracy: 10 / 10
+2018-12-04 10:48:04,916 C:  D:81.4GB M:55.6GB 13686 INFO   : Selected Time: 4 / 10
+2018-12-04 10:48:04,917 C:  D:81.4GB M:55.6GB 13686 INFO   : Selected Interpretability: 8 / 10
+2018-12-04 10:48:04,922 C:  D:81.4GB M:55.6GB 13686 INFO   :   Selected Time Period: None secs
+2018-12-04 10:48:04,923 C:▂ D:81.4GB M:55.6GB 13686 INFO   :   Selected Number of Prediction Periods: None
+2018-12-04 10:48:04,924 C:  D:81.4GB M:55.6GB 13686 INFO   :   Selected Number of Train-Test Gap Periods: None
+2018-12-04 10:48:04,933 C:  D:81.4GB M:55.6GB 13686 INFO   : Data shape: (101, 64)
+2018-12-04 10:48:04,934 C:  D:81.4GB M:55.6GB 13686 INFO   : Time to read the training dataset with datatable: 0.0086272
+2018-12-04 10:48:05,059 C:▂ D:81.4GB M:55.5GB 13686 INFO   : Turning accuracy/time/interpretability into:
+2018-12-04 10:48:05,060 C:  D:81.4GB M:55.5GB 13686 INFO   :   individuals: 8
+2018-12-04 10:48:05,061 C:  D:81.4GB M:55.5GB 13686 INFO   :   iterations=40
+2018-12-04 10:48:05,062 C:  D:81.4GB M:55.5GB 13686 INFO   :   early_stopping_rounds=5
+2018-12-04 10:48:05,064 C:  D:81.4GB M:55.5GB 13686 INFO   :   only_first_fold_model=False
+2018-12-04 10:48:05,065 C:  D:81.4GB M:55.5GB 13686 INFO   :   num_folds=4
+2018-12-04 10:48:05,066 C:  D:81.4GB M:55.5GB 13686 INFO   :   fold_reps=3
+2018-12-04 10:48:05,067 C:  D:81.4GB M:55.5GB 13686 INFO   :   monotonicity_constraints=True
+2018-12-04 10:48:05,069 C:  D:81.4GB M:55.5GB 13686 INFO   :   parameter_tune_level=4
+2018-12-04 10:48:05,070 C:  D:81.4GB M:55.5GB 13686 INFO   :   auto_tune_target_transform=True
+2018-12-04 10:48:05,071 C:  D:81.4GB M:55.5GB 13686 INFO   :   auto_tune_backend=True
+2018-12-04 10:48:05,072 C:  D:81.4GB M:55.5GB 13686 INFO   :   ensemble_level=0
+2018-12-04 10:48:05,074 C:  D:81.4GB M:55.5GB 13686 INFO   :   num_ensemble_folds=0
+2018-12-04 10:48:05,075 C:  D:81.4GB M:55.5GB 13686 INFO   :   max_rows=156000000
+2018-12-04 10:48:05,076 C:  D:81.4GB M:55.5GB 13686 INFO   :   max_rows_feature_evolution=None
+2018-12-04 10:48:05,077 C:  D:81.4GB M:55.5GB 13686 INFO   :   strategy=FS
+2018-12-04 10:48:05,107 C:  D:81.4GB M:55.5GB 13686 INFO   : Writing autoreport arguments to file: '/opt/h2oai/dai/tmp/h2oai_experiment_dilulole/args_do_auto_dl.json'
+2018-12-04 10:48:05,144 C:▂ D:81.4GB M:55.5GB 13686 INFO   : Using 3 threads.
+2018-12-04 10:48:05,145 C:  D:81.4GB M:55.5GB 13686 INFO   : Using seed: 545305355 that is random
+2018-12-04 10:48:05,147 C:▂ D:81.4GB M:55.5GB 13686 INFO   : Size of file system containing temp dir: 124.0GB
+2018-12-04 10:48:05,148 C:  D:81.4GB M:55.5GB 13686 INFO   : Available space on file system containing temp dir: 81.4GB
+2018-12-04 10:48:05,149 C:  D:81.4GB M:55.5GB 13686 INFO   : Temporary directory: /opt/h2oai/dai/./tmp/h2oai_experiment_dilulole
+2018-12-04 10:48:05,164 C:  D:81.4GB M:55.5GB 13686 INFO   : Physical device for temporary directory: /dev/xvda1
+2018-12-04 10:48:05,206 C:▃ D:81.4GB M:55.4GB 13686 INFO   : Using datatable version '0.6.0', git revision '28c202'.
+2018-12-04 10:48:05,208 C:▂ D:81.4GB M:55.4GB 13686 INFO   : Using datatable 'auto' strategy.
+2018-12-04 10:48:05,212 C:  D:81.4GB M:55.4GB 13686 INFO   : Ingesting training data...
+2018-12-04 10:48:05,229 C:  D:81.4GB M:55.4GB 13686 INFO   : Data shape: (101, 64)
+2018-12-04 10:48:05,230 C:  D:81.4GB M:55.4GB 13686 INFO   : Time to read the training dataset with datatable: 0.0087304
+2018-12-04 10:48:05,353 C:▂ D:81.4GB M:55.4GB 13686 INFO   : Checking data integrity...
+2018-12-04 10:48:05,359 C:  D:81.4GB M:55.4GB 13686 WARNING: Dropped 5 rows (out of 101 rows) with missing values in the training response column.
+2018-12-04 10:48:05,365 C:  D:81.4GB M:55.4GB 13686 ERROR  : 
+2018-12-04 10:48:05,367 C:▆ D:81.4GB M:55.4GB 13686 ERROR  : ==============================================================================================
+2018-12-04 10:48:05,371 C:▂ D:81.4GB M:55.4GB 13686 ERROR  : Experiment dilulole FAILED with Training data must contain at least 100 rows
+2018-12-04 10:48:05,373 C:  D:81.4GB M:55.4GB 13686 ERROR  : ==============================================================================================
+2018-12-04 10:48:05,375 C:▄ D:81.4GB M:55.4GB 13686 ERROR  : 
+2018-12-04 10:48:05,379 C:▄ D:81.4GB M:55.4GB 13686 ERROR  : Traceback (most recent call last):
+  File "h2oaicore/auto_dl.py", line 629, in h2oaicore.auto_dl.do_auto_dl
+h2oaicore.systemutils.InvalidDataError: Training data must contain at least 100 rows
+
+2018-12-04 10:48:05,516 C:█ D:81.4GB M:55.5GB 13686 INFO   : 
+2018-12-04 10:48:05,518 C:▄ D:81.4GB M:55.5GB 13686 INFO   : Number of features created: 0
+2018-12-04 10:48:05,520 C:  D:81.4GB M:55.5GB 13686 INFO   : Number of model and feature tuning iterations: 0
+2018-12-04 10:48:05,522 C:  D:81.4GB M:55.5GB 13686 INFO   : Number of feature evolution iterations: 0
+2018-12-04 10:48:05,523 C:▂ D:81.4GB M:55.5GB 13686 INFO   : Number of models trained
+2018-12-04 10:48:05,525 C:  D:81.4GB M:55.5GB 13686 INFO   :   Backend tuning: 0
+2018-12-04 10:48:05,527 C:▆ D:81.4GB M:55.5GB 13686 INFO   :   Target transform tuning: 0
+2018-12-04 10:48:05,529 C:  D:81.4GB M:55.5GB 13686 INFO   :   Model and feature tuning: 0
+2018-12-04 10:48:05,530 C:  D:81.4GB M:55.5GB 13686 INFO   :   Feature pre-pruning: 0
+2018-12-04 10:48:05,532 C:  D:81.4GB M:55.5GB 13686 INFO   :   Feature evolution: 0
+2018-12-04 10:48:05,534 C:  D:81.4GB M:55.5GB 13686 INFO   :   Final pipeline: 0
+2018-12-04 10:48:05,536 C:▆ D:81.4GB M:55.5GB 13686 INFO   : 
+2018-12-04 10:48:05,538 C:  D:81.4GB M:55.5GB 13686 INFO   : Collecting system info during process shutdown
+2018-12-04 10:48:05,661 C:▂ D:81.4GB M:55.5GB 13686 INFO   : Experiment: dilulole, 2018-12-04 10:48, 1.4.1
+2018-12-04 10:48:05,662 C:  D:81.4GB M:55.5GB 13686 INFO   :   Settings: 10/4/8, seed=545305355, GPUs enabled
+2018-12-04 10:48:05,664 C:  D:81.4GB M:55.5GB 13686 INFO   :   Train data: [XXXXX] None
+2018-12-04 10:48:05,665 C:  D:81.4GB M:55.5GB 13686 INFO   :   Validation data: N/A
+2018-12-04 10:48:05,666 C:▂ D:81.4GB M:55.5GB 13686 INFO   :   Test data: N/A
+2018-12-04 10:48:05,667 C:  D:81.4GB M:55.5GB 13686 INFO   : System specs: Docker/Linux, 60 GB, 4 CPU cores, 1/1 GPU
+2018-12-04 10:48:05,669 C:  D:81.4GB M:55.5GB 13686 INFO   :   Max memory usage: 0 GB, 0 GB GPU
+2018-12-04 10:48:05,670 C:  D:81.4GB M:55.5GB 13686 INFO   : Recipe: AutoDL (0 iterations, 8 individuals)
+2018-12-04 10:48:05,671 C:  D:81.4GB M:55.5GB 13686 INFO   : Experiment failed: Training data must contain at least 100 rows
+2018-12-04 10:48:05,673 C:  D:81.4GB M:55.5GB 13686 INFO   : 
+2018-12-04 10:48:05,674 C:  D:81.4GB M:55.5GB 13686 INFO   : 
+2018-12-04 10:48:05,675 C:  D:81.4GB M:55.5GB 13686 INFO   : 
+2018-12-04 10:48:05,680 C:  D:81.4GB M:55.5GB 13686 INFO   : Collecting logs
+2018-12-04 10:48:05,683 C:▂ D:81.4GB M:55.5GB 13686 INFO   : Archiving experiment summary to /opt/h2oai/dai/./tmp/h2oai_experiment_dilulole/h2oai_experiment_summary_dilulole.zip
+2018-12-04 10:48:05,686 C:  D:81.4GB M:55.5GB 13686 INFO   : Archiving logs to /opt/h2oai/dai/./tmp/h2oai_experiment_dilulole/h2oai_experiment_logs_dilulole.zip

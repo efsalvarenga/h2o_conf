@@ -1,0 +1,101 @@
+{
+    "index": {
+        "0": 0
+    },
+    "n_gpus": {
+        "0": 1
+    },
+    "gpu_id": {
+        "0": 0
+    },
+    "n_estimators": {
+        "0": 328
+    },
+    "booster": {
+        "0": "gbtree"
+    },
+    "learning_rate": {
+        "0": 0.02
+    },
+    "reg_alpha": {
+        "0": 0
+    },
+    "reg_lambda": {
+        "0": 0
+    },
+    "gamma": {
+        "0": 0.001
+    },
+    "max_depth": {
+        "0": 9
+    },
+    "max_bin": {
+        "0": 256
+    },
+    "max_leaves": {
+        "0": 32
+    },
+    "scale_pos_weight": {
+        "0": 1.0
+    },
+    "max_delta_step": {
+        "0": 0.0
+    },
+    "min_child_weight": {
+        "0": 1
+    },
+    "subsample": {
+        "0": 1
+    },
+    "colsample_bytree": {
+        "0": 0.8
+    },
+    "tree_method": {
+        "0": "gpu_hist"
+    },
+    "grow_policy": {
+        "0": "lossguide"
+    },
+    "min_data_in_bin": {
+        "0": 1
+    },
+    "min_child_samples": {
+        "0": 1
+    },
+    "boosting_type": {
+        "0": "gbdt"
+    },
+    "num_classes": {
+        "0": 1
+    },
+    "objective": {
+        "0": "reg:linear"
+    },
+    "eval_metric": {
+        "0": "rmse"
+    },
+    "random_state": {
+        "0": 667368647
+    },
+    "early_stopping_threshold": {
+        "0": 0
+    },
+    "monotonicity_constraints": {
+        "0": true
+    },
+    "silent": {
+        "0": true
+    },
+    "debug_verbose": {
+        "0": 0
+    },
+    "n_jobs": {
+        "0": 1
+    },
+    "num_parallel_tree": {
+        "0": 1
+    },
+    "base_score": {
+        "0": 269834.1441733405
+    }
+}

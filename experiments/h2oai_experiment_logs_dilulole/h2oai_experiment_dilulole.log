@@ -1,0 +1,424 @@
+# Copyright 2018 H2O.ai; Proprietary License;  -*- encoding: utf-8 -*-
+
+-------------------------------------------------------------------------------
+
+                H2O DRIVERLESS AI EXPERIMENT LOGFILE 
+
+
+                           PROPRIETARY LICENSE -
+
+                USE OF ANY PART OF THIS SOFTWARE REQUIRES A VALID,
+                ONGOING LICENSE AGREEMENT WITH H2O.AI.
+
+                Please contact sales@h2o.ai for more information.
+
+-------------------------------------------------------------------------------
+
+
+PLEASE READ THIS H2O.AI DRIVERLESS AI EVALUATION AGREEMENT ('AGREEMENT') CAREFULLY BEFORE USING THE EVALUATION SOFTWARE OFFERED BY H2O.AI, INC. ('H2O.AI').  BY CLICKING THE 'AGREE' (OR SIMILAR) BUTTON ON AN ONLINE ORDER FORM, BY USING THE EVALUATION SOFTWARE IN ANY MANNER, OR BY SIGNING AN ORDER FORM WHICH REFERENCES THESE EVALUATION TERMS AND CONDITIONS (AS APPLICABLE) YOU OR THE ENTITY YOU REPRESENT ('LICENSEE') AGREE THAT YOU HAVE READ AND AGREE TO BE BOUND BY AND A PARTY TO THE TERMS AND CONDITIONS OF THIS AGREEMENT TO THE EXCLUSION OF ALL OTHER TERMS, YOU REPRESENT AND WARRANT THAT YOU ARE AUTHORIZED TO BIND LICENSEE.  IF THE TERMS OF THIS AGREEMENT ARE CONSIDERED AN OFFER, ACCEPTANCE IS EXPRESSLY LIMITED TO SUCH TERMS.
+
+H2O.AI DRIVERLESS AI EVALUATION AGREEMENT
+
+  WHEREAS, H2O.ai is willing to supply, within the protection of a confidential relationship, the software, services and related materials provided in connection with this Agreement (collectively, the 'Evaluation Software') to Licensee solely for internal evaluation purposes and not for any production use ('Evaluation');
+
+  NOW, THEREFORE, in consideration of the foregoing and the mutual covenants hereinafter set forth, the parties hereby agree as follows:
+      1. Use of Evaluation Software. Subject to the terms of this Agreement, H2O.ai hereby grants to Licensee a personal, nontransferable, nonsublicensable, nonexclusive, revocable license to access and use the Evaluation Software only in accordance with all documentation supplied by H2O.ai solely for Licensee's internal Evaluation purposes during the term of this Agreement. H2O.ai shall at all times retain all title to and ownership of the Evaluation Software and all intellectual property rights relating thereto. Licensee agrees to use the Evaluation Software only in the ordinary course of its Evaluation. Licensee shall not (and shall not allow any third party to): (a) decompile, disassemble, or otherwise reverse engineer any portion of the Evaluation Software; (b) remove, alter or obscure any product identification, copyright or other notices contained on or in the Evaluation Software; (c) disclose, provide, distribute, resell, lease, lend or allow access to the Evaluation Software to any third party; (d) use the Evaluation Software for timesharing or service bureau purposes, or otherwise for the benefit of any third party; (e) copy, modify, adapt or create a derivative work of any part of the Evaluation Software; (f) use the Evaluation Software in excess of any limitations provided by H2O.ai;(g) use the Evaluation Software to help develop any competitive product or service; (h) remove or export the Evaluation Software or any direct product thereof from the United States. H2O
+      2. Feedback. If Licensee proposes any modifications, derivatives, enhancements or improvements to the Evaluation Software ('Feedback'), then notwithstanding anything else, Licensee hereby grants H2O.ai a perpetual, irrevocable, royalty free, fully paid-up, sub-licensable, right and license to use, display, reproduce, distribute and otherwise fully exploit such Feedback for any purposes.
+      3. Warning. THE EVALUATION SOFTWARE MAY CONTAIN A ROUTINE THAT CAUSES THE EVALUATION SOFTWARE TO CEASE PROPER FUNCTIONING AFTER A CERTAIN PERIOD OF TIME. THIS MAY OCCUR BEFORE OR AFTER TERMINATION OF THE LICENSE, SO LICENSEE MUST BE PREPARED AT ALL TIMES AND MAY NOT RELY ON THE EVALUATION SOFTWARE
+      4. Warranty Disclaimer.  The parties acknowledge that the Evaluation Software are provided 'AS IS' and may not be functional on any machine or in any environment. H2O.AI DISCLAIMS ALL WARRANTIES RELATING TO THE EVALUATION SOFTWARE, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY WARRANTIES AGAINST INFRINGEMENT OF THIRD-PARTY RIGHTS, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+      5. Limitation of Remedies and Damages. H2O.AI SHALL NOT BE RESPONSIBLE OR LIABLE TO THE OTHER PARTY WITH RESPECT TO ANY SUBJECT MATTER OF THIS AGREEMENT UNDER ANY CONTRACT, NEGLIGENCE, STRICT LIABILITY OR OTHER THEORY (A) FOR LOSS OR INACCURACY OF DATA OR COST OF PROCUREMENT OF SUBSTITUTE GOODS, SERVICES OR TECHNOLOGY, (B) FOR ANY SPECIAL, INDIRECT, INCIDENTAL, PUNITIVE, RELIANCE, OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED TO LOSS OF REVENUES AND LOSS OF PROFITS, OR (C) FOR DAMAGES OF ANY KIND WHATSOEVER ARISING OUT OF THIS AGREEMENT IN EXCESS OF $100. H2O.AI SHALL NOT BE RESPONSIBLE FOR ANY MATTER BEYOND ITS REASONABLE CONTROL.
+      6. Nonassignability. Although fully assignable and transferable by H2O.ai, neither the rights nor the obligations arising under this Agreement are assignable or transferable by Licensee, and any such attempted assignment or transfer shall be void and without effect.
+      7. Controlling Law, Attorneys' Fees and Severability. This Agreement shall be governed by and construed in accordance with the laws of the State of California without regard to the conflicts of laws provisions therein. In any action to enforce this Agreement the prevailing party will be entitled to costs and attorneys' fees. In the event that any of the provisions of this Agreement shall be held by a court or other tribunal of competent jurisdiction to be unenforceable, such provisions shall be limited or eliminated to the minimum extent necessary so that this Agreement shall otherwise remain in full force and effect and enforceable.
+      8. Entire Agreement. This Agreement constitutes the entire agreement between the parties pertaining to the subject matter hereof.  Any modifications of this Agreement must be in writing and signed by both parties.
+      9. Term; Termination. This Agreement shall become effective upon Licensee's first access to or use of the Evaluation Software ('Start Date'). This Agreement may be terminated by either party for any reason or no reason upon written notice to the other party, or immediately upon notice of any breach by Licensee of the provisions of this Agreement, and in any case will terminate twenty-one (21) days from the Start Date, unless extended by H2O.ai in writing.  Upon termination, the license granted hereunder will terminate and Licensee shall promptly cease accessing the Evaluation Software, and shall return any and all documents, notes and other materials regarding the Evaluation Software to H2O.ai, including, without limitation, all copies and extracts of the foregoing, but the terms of this Agreement will otherwise remain in effect.
+
+GDSVF&H\2472254.1
+
+
+2018-12-04 10:48:04,885 C:  D:81.4GB M:55.6GB 13686 INFO   : Overriding variable with experiment-specific settings: enable_tensorflow = false
+
+2018-12-04 10:48:04,887 C:  D:81.4GB M:55.6GB 13686 INFO   : Overriding variable with experiment-specific settings: override_lag_sizes = 
+
+2018-12-04 10:48:04,913 C:▁ D:81.4GB M:55.6GB 13686 INFO   : H2O Driverless AI Version: 1.4.1
+2018-12-04 10:48:04,915 C:  D:81.4GB M:55.6GB 13686 INFO   : Selected Accuracy: 10 / 10
+2018-12-04 10:48:04,916 C:  D:81.4GB M:55.6GB 13686 INFO   : Selected Time: 4 / 10
+2018-12-04 10:48:04,917 C:  D:81.4GB M:55.6GB 13686 INFO   : Selected Interpretability: 8 / 10
+2018-12-04 10:48:04,918 C:▂ D:81.4GB M:55.6GB 13686 DATA   : Time Series Parameters:
+2018-12-04 10:48:04,920 C:  D:81.4GB M:55.6GB 13686 DATA   :   Selected Time Column: 'mth_yr'
+2018-12-04 10:48:04,921 C:  D:81.4GB M:55.6GB 13686 DATA   :   Selected Time Groups Columns: None
+2018-12-04 10:48:04,922 C:  D:81.4GB M:55.6GB 13686 INFO   :   Selected Time Period: None secs
+2018-12-04 10:48:04,923 C:▂ D:81.4GB M:55.6GB 13686 INFO   :   Selected Number of Prediction Periods: None
+2018-12-04 10:48:04,924 C:  D:81.4GB M:55.6GB 13686 INFO   :   Selected Number of Train-Test Gap Periods: None
+2018-12-04 10:48:04,933 C:  D:81.4GB M:55.6GB 13686 INFO   : Data shape: (101, 64)
+2018-12-04 10:48:04,934 C:  D:81.4GB M:55.6GB 13686 INFO   : Time to read the training dataset with datatable: 0.0086272
+2018-12-04 10:48:05,059 C:▂ D:81.4GB M:55.5GB 13686 INFO   : Turning accuracy/time/interpretability into:
+2018-12-04 10:48:05,060 C:  D:81.4GB M:55.5GB 13686 INFO   :   individuals: 8
+2018-12-04 10:48:05,061 C:  D:81.4GB M:55.5GB 13686 INFO   :   iterations=40
+2018-12-04 10:48:05,062 C:  D:81.4GB M:55.5GB 13686 INFO   :   early_stopping_rounds=5
+2018-12-04 10:48:05,064 C:  D:81.4GB M:55.5GB 13686 INFO   :   only_first_fold_model=False
+2018-12-04 10:48:05,065 C:  D:81.4GB M:55.5GB 13686 INFO   :   num_folds=4
+2018-12-04 10:48:05,066 C:  D:81.4GB M:55.5GB 13686 INFO   :   fold_reps=3
+2018-12-04 10:48:05,067 C:  D:81.4GB M:55.5GB 13686 INFO   :   monotonicity_constraints=True
+2018-12-04 10:48:05,069 C:  D:81.4GB M:55.5GB 13686 INFO   :   parameter_tune_level=4
+2018-12-04 10:48:05,070 C:  D:81.4GB M:55.5GB 13686 INFO   :   auto_tune_target_transform=True
+2018-12-04 10:48:05,071 C:  D:81.4GB M:55.5GB 13686 INFO   :   auto_tune_backend=True
+2018-12-04 10:48:05,072 C:  D:81.4GB M:55.5GB 13686 INFO   :   ensemble_level=0
+2018-12-04 10:48:05,074 C:  D:81.4GB M:55.5GB 13686 INFO   :   num_ensemble_folds=0
+2018-12-04 10:48:05,075 C:  D:81.4GB M:55.5GB 13686 INFO   :   max_rows=156000000
+2018-12-04 10:48:05,076 C:  D:81.4GB M:55.5GB 13686 INFO   :   max_rows_feature_evolution=None
+2018-12-04 10:48:05,077 C:  D:81.4GB M:55.5GB 13686 INFO   :   strategy=FS
+2018-12-04 10:48:05,104 C:▂ D:81.4GB M:55.5GB 13686 DATA   : Driverless AI Config Settings
+Modify config.toml or set DRIVERLESS_AI_<KEY>=<VALUE> to override (double-quote arrays)
+
+vis_server_ip                                      : 127.0.0.1 
+vis_server_port                                   *: 12346 
+procsy_ip                                          : 127.0.0.1 
+procsy_port                                       *: 12347 
+h2o_ip                                             : 127.0.0.1 
+h2o_port                                          *: 54321 
+ip                                                 : 127.0.0.1 
+port                                               : 12345 
+max_file_upload_size                               : 104857600000 
+log_level                                          : 1 
+enable_https                                       : False 
+ssl_key_file                                       : /etc/dai/private_key.pem 
+ssl_crt_file                                       : /etc/dai/cert.pem 
+ssl_no_sslv2                                       : True 
+ssl_no_sslv3                                       : True 
+ssl_no_tlsv1                                       : True 
+ssl_no_tlsv1_1                                     : True 
+ssl_no_tlsv1_2                                     : False 
+ssl_no_tlsv1_3                                     : False 
+data_directory                                    *: ./tmp 
+enable_benchmark                                  *: False 
+enable_benchmark_each_experiment                   : False 
+enable_startup_checks                              : True 
+usage_stats_opt_in                                 : False 
+datatable_verbose_log                              : False 
+make_python_scoring_pipeline                       : True 
+make_mojo_scoring_pipeline                         : False 
+authentication_method                              : unvalidated 
+ldap_recipe                                        : 0 
+ldap_server                                        :  
+ldap_port                                          :  
+ldap_bind_dn                                       :  
+ldap_bind_password                                 :  
+ldap_dc                                            :  
+ldap_base_dn                                       :  
+ldap_base_filter                                   :  
+ldap_user_name_attribute                           :  
+ldap_tls_file                                      :  
+ldap_ou_dn                                         :  
+ldap_search_filter                                 :  
+ldap_search_user_id                                :  
+ldap_search_password                               :  
+ldap_use_ssl                                       :  
+ldap_user_prefix                                   :  
+supported_file_types                              *: ['csv', 'tsv', 'txt', 'dat', 'tgz', 'gz', 'bz2', 'zip', 'xz', 'xls', 'xlsx', 'nff', 'feather', 'bin', 'arff', 'parquet'] 
+enabled_file_systems                               : ['file', 'hdfs', 's3'] 
+do_not_log_list                                   *: local_htpasswd_file, aws_access_key_id, aws_secret_access_key 
+max_cores                                          : 0 
+min_dt_threads_munging                             : 4 
+min_dt_threads_final_munging                       : 4 
+num_gpus_per_model                                 : 1 
+num_gpus_per_experiment                            : -1 
+gpu_id_start                                       : 0 
+max_workers                                        : 1 
+ping_period                                        : 60 
+disk_limit_gb                                      : 5 
+memory_limit_gb                                    : 5 
+min_num_rows                                       : 100 
+data_precision                                     : float64 
+transformer_precision                              : auto 
+seed                                               : 1234 
+missing_values                                    *: ['', '?', 'None', 'nan', 'NA', 'N/A', 'inf', '-inf', '1.7976931348623157e+308', '-1.7976931348623157e+308'] 
+tf_nan_impute_value                                : -5 
+statistical_threshold_data_size_small              : 100000 
+statistical_threshold_data_size_large              : 100000000 
+max_rows_feature_evolution                         : 1000000 
+max_cols                                           : 10000 
+max_orig_cols_selected                             : 10000 
+max_orig_numeric_cols_selected                     : 10000 
+max_orig_nonnumeric_cols_selected                  : 500 
+max_orig_cols_selected_simple_factor               : 2 
+max_relative_cardinality                           : 0.95 
+max_absolute_cardinality                           : 1000000 
+max_fold_uniques                                   : 100000 
+num_as_cat                                         : True 
+max_int_as_cat_uniques                             : 50 
+num_folds                                          : 3 
+full_cv_accuracy_switch                            : 8 
+ensemble_accuracy_switch                           : 5 
+num_ensemble_folds                                 : 5 
+fold_reps                                          : 1 
+imbalance_ratio_undersampling_threshold            : 5 
+smart_imbalanced_sampling                         *: True 
+max_num_classes                                    : 100 
+num_actuals_vs_predicted                           : 100 
+feature_brain_level                                : 2 
+max_num_brain_indivs                               : 3 
+brain_rel_dir                                      : H2O.ai_brain 
+brain_max_size_GB                                  : 20 
+early_stopping                                     : True 
+min_dai_iterations                                 : 0 
+nfeatures_max                                      : -1 
+feature_engineering_effort                         : 5 
+string_col_as_text_threshold                       : 0.3 
+string_col_as_text_min_relative_cardinality        : 0.1 
+string_col_as_text_min_absolute_cardinality        : 100 
+monotonicity_constraints_interpretability_switch   : 7 
+max_feature_interaction_depth                      : 8 
+parameter_tuning_offset                            : 2 
+tune_target_transform_accuracy_switch              : 3 
+target_transformer                                 : auto 
+tune_parameters_accuracy_switch                    : 3 
+tournament_style                                   : auto 
+tournament_style_interpretability_switch           : 6 
+tournament_style_accuracy_switch                   : 5 
+tournament_feature_style_accuracy_switch           : 6 
+tournament_fullstack_style_accuracy_switch         : 7 
+num_individuals                                    : 2 
+fixed_num_individuals                              : 0 
+fixed_num_folds                                    : 0 
+fixed_fold_reps                                    : 0 
+fixed_only_first_fold_model                        : False 
+enable_target_encoding                             : True 
+black_list_transformers                            :  
+black_list_genes                                   :  
+params_lightgbm                                    : {} 
+params_xgboost                                     : {} 
+params_tensorflow                                  : {} 
+params_gblinear                                    : {} 
+params_rulefit                                     : {} 
+enable_xgboost                                     : auto 
+xgboost_threshold_data_size_large                  : 100000000 
+xgboost_gpu_threshold_data_size_large              : 30000000 
+enable_glm                                         : auto 
+enable_lightgbm                                    : auto 
+max_nestimators                                    : 3000 
+max_max_depth                                      : 12 
+max_max_bin                                        : 256 
+min_max_bin                                        : 32 
+factor_rf                                          : 1.5 
+max_learning_rate                                 *: 0.05 
+min_learning_rate                                 *: 0.01 
+min_learning_rate_final                            : 0.01 
+enable_tensorflow                                 *: false 
+tensorflow_max_epochs                              : 100 
+tensorflow_max_epochs_nlp                          : 2 
+enable_tensorflow_force                            : False 
+enable_tensorflow_nlp                              : True 
+enable_rulefit                                     : off 
+rulefit_max_num_rules                              : 100 
+rulefit_max_tree_depth                             : 6 
+rulefit_max_num_trees                              : 50 
+rulefit_threshold_data_size_large                  : 1000000 
+time_series_recipe                                 : True 
+min_ymd_timestamp                                  : 19700101 
+max_ymd_timestamp                                  : 20300101 
+max_rows_datetime_format_detection                 : 100000 
+check_distribution_shift                           : True 
+check_reduced_features                             : True 
+shift_trees                                        : 100 
+shift_max_bin                                      : 256 
+shift_max_depth                                    : 4 
+shift_key_features_varimp                          : 0.01 
+detect_features_distribution_shift_threshold_auc   : 0.55 
+drop_features_distribution_shift_threshold_auc     : 0.6 
+drop_features_distribution_shift_min_features      : 1 
+trace_detect_types                                 : False 
+trace_fit_transform                                : False 
+trace_final_fit_transform                          : False 
+trace_final_transform                              : False 
+abs_tol_for_perfect_score                          : 0.0001 
+mli_sample_above_for_scoring                       : 1000000 
+mli_sample_above_for_training                      : 100000 
+mli_sample_size                                    : 100000 
+mli_num_quantiles                                  : 10 
+mli_drf_num_trees                                  : 100 
+mli_drf_max_depth                                  : 20 
+mli_sample_training                                : True 
+klime_lambda                                       : [1e-06, 1e-08] 
+klime_alpha                                        : 0.0 
+mli_max_numeric_enum_cardinality                   : 25 
+mli_max_number_cluster_vars                        : 6 
+use_all_columns_klime_kmeans                       : False 
+mli_strict_version_check                           : True 
+mli_cloud_name                                     :  
+dump_varimp_every_scored_indiv                     : False 
+dump_modelparams_every_scored_indiv                : False 
+autodoc_template                                   : report_template.md 
+core_site_xml_path                                 :  
+hdfs_config_path                                   :  
+key_tab_path                                       :  
+hdfs_auth_type                                     : noauth 
+hdfs_app_principal_user                            :  
+hdfs_app_login_user                                :  
+hdfs_app_jvm_args                                  :  
+hdfs_app_classpath                                 :  
+aws_auth                                           : False 
+s3_init_path                                       : s3://h2o-public-test-data/smalldata/ 
+gcs_path_to_service_account_json                   :  
+minio_endpoint_url                                 :  
+minio_access_key_id                                :  
+minio_secret_access_key                            :  
+snowflake_url                                      :  
+snowflake_user                                     :  
+snowflake_password                                 :  
+snowflake_account                                  :  
+kdb_user                                           :  
+kdb_password                                       :  
+kdb_hostname                                       :  
+kdb_port                                           :  
+kdb_app_classpath                                  :  
+kdb_app_jvm_args                                   :  
+
+2018-12-04 10:48:05,105 C:  D:81.4GB M:55.5GB 13686 DATA   : function name "run"
+2018-12-04 10:48:05,106 C:▂ D:81.4GB M:55.5GB 13686 DATA   :     self = <Process(Process-1415, started)>
+2018-12-04 10:48:05,107 C:  D:81.4GB M:55.5GB 13686 INFO   : Writing autoreport arguments to file: '/opt/h2oai/dai/tmp/h2oai_experiment_dilulole/args_do_auto_dl.json'
+2018-12-04 10:48:05,144 C:▂ D:81.4GB M:55.5GB 13686 INFO   : Using 3 threads.
+2018-12-04 10:48:05,145 C:  D:81.4GB M:55.5GB 13686 INFO   : Using seed: 545305355 that is random
+2018-12-04 10:48:05,147 C:▂ D:81.4GB M:55.5GB 13686 INFO   : Size of file system containing temp dir: 124.0GB
+2018-12-04 10:48:05,148 C:  D:81.4GB M:55.5GB 13686 INFO   : Available space on file system containing temp dir: 81.4GB
+2018-12-04 10:48:05,149 C:  D:81.4GB M:55.5GB 13686 INFO   : Temporary directory: /opt/h2oai/dai/./tmp/h2oai_experiment_dilulole
+2018-12-04 10:48:05,164 C:  D:81.4GB M:55.5GB 13686 INFO   : Physical device for temporary directory: /dev/xvda1
+2018-12-04 10:48:05,206 C:▃ D:81.4GB M:55.4GB 13686 INFO   : Using datatable version '0.6.0', git revision '28c202'.
+2018-12-04 10:48:05,208 C:▂ D:81.4GB M:55.4GB 13686 INFO   : Using datatable 'auto' strategy.
+2018-12-04 10:48:05,212 C:  D:81.4GB M:55.4GB 13686 INFO   : Ingesting training data...
+2018-12-04 10:48:05,219 C:▄ D:81.4GB M:55.4GB 13686 DATA   : Training data file name: make2p2i_train.csv
+2018-12-04 10:48:05,220 C:  D:81.4GB M:55.4GB 13686 DATA   : Reading training data from: ./tmp/tavuwuce/make2p2i_train.csv.1543920468.1603699.bin
+2018-12-04 10:48:05,229 C:  D:81.4GB M:55.4GB 13686 INFO   : Data shape: (101, 64)
+2018-12-04 10:48:05,230 C:  D:81.4GB M:55.4GB 13686 INFO   : Time to read the training dataset with datatable: 0.0087304
+2018-12-04 10:48:05,353 C:▂ D:81.4GB M:55.4GB 13686 INFO   : Checking data integrity...
+2018-12-04 10:48:05,359 C:  D:81.4GB M:55.4GB 13686 WARNING: Dropped 5 rows (out of 101 rows) with missing values in the training response column.
+2018-12-04 10:48:05,365 C:  D:81.4GB M:55.4GB 13686 ERROR  : 
+2018-12-04 10:48:05,367 C:▆ D:81.4GB M:55.4GB 13686 ERROR  : ==============================================================================================
+2018-12-04 10:48:05,369 C:  D:81.4GB M:55.4GB 13686 DATA   : Experiment dilulole FAILED with Training data must contain at least 100 rows
+2018-12-04 10:48:05,371 C:▂ D:81.4GB M:55.4GB 13686 ERROR  : Experiment dilulole FAILED with Training data must contain at least 100 rows
+2018-12-04 10:48:05,373 C:  D:81.4GB M:55.4GB 13686 ERROR  : ==============================================================================================
+2018-12-04 10:48:05,375 C:▄ D:81.4GB M:55.4GB 13686 ERROR  : 
+2018-12-04 10:48:05,377 C:  D:81.4GB M:55.4GB 13686 DATA   : Traceback (most recent call last):
+  File "h2oaicore/auto_dl.py", line 629, in h2oaicore.auto_dl.do_auto_dl
+h2oaicore.systemutils.InvalidDataError: Training data must contain at least 100 rows
+
+2018-12-04 10:48:05,379 C:▄ D:81.4GB M:55.4GB 13686 ERROR  : Traceback (most recent call last):
+  File "h2oaicore/auto_dl.py", line 629, in h2oaicore.auto_dl.do_auto_dl
+h2oaicore.systemutils.InvalidDataError: Training data must contain at least 100 rows
+
+2018-12-04 10:48:05,516 C:█ D:81.4GB M:55.5GB 13686 INFO   : 
+2018-12-04 10:48:05,518 C:▄ D:81.4GB M:55.5GB 13686 INFO   : Number of features created: 0
+2018-12-04 10:48:05,520 C:  D:81.4GB M:55.5GB 13686 INFO   : Number of model and feature tuning iterations: 0
+2018-12-04 10:48:05,522 C:  D:81.4GB M:55.5GB 13686 INFO   : Number of feature evolution iterations: 0
+2018-12-04 10:48:05,523 C:▂ D:81.4GB M:55.5GB 13686 INFO   : Number of models trained
+2018-12-04 10:48:05,525 C:  D:81.4GB M:55.5GB 13686 INFO   :   Backend tuning: 0
+2018-12-04 10:48:05,527 C:▆ D:81.4GB M:55.5GB 13686 INFO   :   Target transform tuning: 0
+2018-12-04 10:48:05,529 C:  D:81.4GB M:55.5GB 13686 INFO   :   Model and feature tuning: 0
+2018-12-04 10:48:05,530 C:  D:81.4GB M:55.5GB 13686 INFO   :   Feature pre-pruning: 0
+2018-12-04 10:48:05,532 C:  D:81.4GB M:55.5GB 13686 INFO   :   Feature evolution: 0
+2018-12-04 10:48:05,534 C:  D:81.4GB M:55.5GB 13686 INFO   :   Final pipeline: 0
+2018-12-04 10:48:05,536 C:▆ D:81.4GB M:55.5GB 13686 INFO   : 
+2018-12-04 10:48:05,538 C:  D:81.4GB M:55.5GB 13686 INFO   : Collecting system info during process shutdown
+2018-12-04 10:48:05,561 C:▆ D:81.4GB M:55.5GB 13686 DATA   : MemTotal:       62879988 kB
+2018-12-04 10:48:05,561 C:▆ D:81.4GB M:55.5GB 13686 DATA   : MemFree:        56145704 kB
+2018-12-04 10:48:05,561 C:▆ D:81.4GB M:55.5GB 13686 DATA   : MemAvailable:   58230496 kB
+2018-12-04 10:48:05,562 C:▆ D:81.4GB M:55.5GB 13686 DATA   : Buffers:           98852 kB
+2018-12-04 10:48:05,562 C:▆ D:81.4GB M:55.5GB 13686 DATA   : Cached:          2381232 kB
+2018-12-04 10:48:05,562 C:▆ D:81.4GB M:55.5GB 13686 DATA   : SwapCached:            0 kB
+2018-12-04 10:48:05,563 C:▆ D:81.4GB M:55.5GB 13686 DATA   : Active:          4625176 kB
+2018-12-04 10:48:05,563 C:▆ D:81.4GB M:55.5GB 13686 DATA   : Inactive:        1677164 kB
+2018-12-04 10:48:05,563 C:▆ D:81.4GB M:55.5GB 13686 DATA   : Active(anon):    3826316 kB
+2018-12-04 10:48:05,563 C:▆ D:81.4GB M:55.5GB 13686 DATA   : Inactive(anon):     9052 kB
+2018-12-04 10:48:05,564 C:▆ D:81.4GB M:55.5GB 13686 DATA   : Active(file):     798860 kB
+2018-12-04 10:48:05,564 C:▆ D:81.4GB M:55.5GB 13686 DATA   : Inactive(file):  1668112 kB
+2018-12-04 10:48:05,564 C:▆ D:81.4GB M:55.5GB 13686 DATA   : Unevictable:        3652 kB
+2018-12-04 10:48:05,564 C:▆ D:81.4GB M:55.5GB 13686 DATA   : Mlocked:            3652 kB
+2018-12-04 10:48:05,565 C:▆ D:81.4GB M:55.5GB 13686 DATA   : SwapTotal:             0 kB
+2018-12-04 10:48:05,565 C:▆ D:81.4GB M:55.5GB 13686 DATA   : SwapFree:              0 kB
+2018-12-04 10:48:05,565 C:▆ D:81.4GB M:55.5GB 13686 DATA   : Dirty:               384 kB
+2018-12-04 10:48:05,565 C:▆ D:81.4GB M:55.5GB 13686 DATA   : Writeback:             0 kB
+2018-12-04 10:48:05,566 C:▆ D:81.4GB M:55.5GB 13686 DATA   : AnonPages:       3828016 kB
+2018-12-04 10:48:05,566 C:▆ D:81.4GB M:55.5GB 13686 DATA   : Mapped:           391376 kB
+2018-12-04 10:48:05,566 C:▆ D:81.4GB M:55.5GB 13686 DATA   : Shmem:             10692 kB
+2018-12-04 10:48:05,567 C:▆ D:81.4GB M:55.5GB 13686 DATA   : Slab:             182240 kB
+2018-12-04 10:48:05,567 C:▆ D:81.4GB M:55.5GB 13686 DATA   : SReclaimable:     114548 kB
+2018-12-04 10:48:05,567 C:▆ D:81.4GB M:55.5GB 13686 DATA   : SUnreclaim:        67692 kB
+2018-12-04 10:48:05,567 C:▆ D:81.4GB M:55.5GB 13686 DATA   : KernelStack:        7152 kB
+2018-12-04 10:48:05,568 C:▆ D:81.4GB M:55.5GB 13686 DATA   : PageTables:        59484 kB
+2018-12-04 10:48:05,568 C:▆ D:81.4GB M:55.5GB 13686 DATA   : NFS_Unstable:          0 kB
+2018-12-04 10:48:05,568 C:▆ D:81.4GB M:55.5GB 13686 DATA   : Bounce:                0 kB
+2018-12-04 10:48:05,568 C:▆ D:81.4GB M:55.5GB 13686 DATA   : WritebackTmp:          0 kB
+2018-12-04 10:48:05,569 C:▆ D:81.4GB M:55.5GB 13686 DATA   : CommitLimit:    31439992 kB
+2018-12-04 10:48:05,569 C:▆ D:81.4GB M:55.5GB 13686 DATA   : Committed_AS:   16811284 kB
+2018-12-04 10:48:05,569 C:▆ D:81.4GB M:55.5GB 13686 DATA   : VmallocTotal:   34359738367 kB
+2018-12-04 10:48:05,569 C:▆ D:81.4GB M:55.5GB 13686 DATA   : VmallocUsed:           0 kB
+2018-12-04 10:48:05,570 C:▆ D:81.4GB M:55.5GB 13686 DATA   : VmallocChunk:          0 kB
+2018-12-04 10:48:05,570 C:▆ D:81.4GB M:55.5GB 13686 DATA   : HardwareCorrupted:     0 kB
+2018-12-04 10:48:05,570 C:▆ D:81.4GB M:55.5GB 13686 DATA   : AnonHugePages:   3328000 kB
+2018-12-04 10:48:05,571 C:▆ D:81.4GB M:55.5GB 13686 DATA   : CmaTotal:              0 kB
+2018-12-04 10:48:05,571 C:▆ D:81.4GB M:55.5GB 13686 DATA   : CmaFree:               0 kB
+2018-12-04 10:48:05,571 C:▆ D:81.4GB M:55.5GB 13686 DATA   : HugePages_Total:       0
+2018-12-04 10:48:05,571 C:▆ D:81.4GB M:55.5GB 13686 DATA   : HugePages_Free:        0
+2018-12-04 10:48:05,572 C:▆ D:81.4GB M:55.5GB 13686 DATA   : HugePages_Rsvd:        0
+2018-12-04 10:48:05,572 C:▆ D:81.4GB M:55.5GB 13686 DATA   : HugePages_Surp:        0
+2018-12-04 10:48:05,572 C:▆ D:81.4GB M:55.5GB 13686 DATA   : Hugepagesize:       2048 kB
+2018-12-04 10:48:05,572 C:▆ D:81.4GB M:55.5GB 13686 DATA   : DirectMap4k:      387072 kB
+2018-12-04 10:48:05,573 C:▆ D:81.4GB M:55.5GB 13686 DATA   : DirectMap2M:    10098688 kB
+2018-12-04 10:48:05,573 C:▆ D:81.4GB M:55.5GB 13686 DATA   : DirectMap1G:    55574528 kB
+2018-12-04 10:48:05,573 C:▆ D:81.4GB M:55.5GB 13686 DATA   : 
+2018-12-04 10:48:05,621 C:▂ D:81.4GB M:55.5GB 13686 DATA   : Tue Dec  4 10:48:05 2018       
+2018-12-04 10:48:05,622 C:▂ D:81.4GB M:55.5GB 13686 DATA   : +-----------------------------------------------------------------------------+
+2018-12-04 10:48:05,622 C:▂ D:81.4GB M:55.5GB 13686 DATA   : | NVIDIA-SMI 396.44                 Driver Version: 396.44                    |
+2018-12-04 10:48:05,622 C:▂ D:81.4GB M:55.5GB 13686 DATA   : |-------------------------------+----------------------+----------------------+
+2018-12-04 10:48:05,623 C:▂ D:81.4GB M:55.5GB 13686 DATA   : | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+2018-12-04 10:48:05,623 C:▂ D:81.4GB M:55.5GB 13686 DATA   : | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+2018-12-04 10:48:05,623 C:▂ D:81.4GB M:55.5GB 13686 DATA   : |===============================+======================+======================|
+2018-12-04 10:48:05,623 C:▂ D:81.4GB M:55.5GB 13686 DATA   : |   0  Tesla K80           On   | 00000000:00:1E.0 Off |                    0 |
+2018-12-04 10:48:05,624 C:▂ D:81.4GB M:55.5GB 13686 DATA   : | N/A   31C    P8    30W / 149W |      0MiB / 11441MiB |      0%      Default |
+2018-12-04 10:48:05,624 C:▂ D:81.4GB M:55.5GB 13686 DATA   : +-------------------------------+----------------------+----------------------+
+2018-12-04 10:48:05,624 C:▂ D:81.4GB M:55.5GB 13686 DATA   :                                                                                
+2018-12-04 10:48:05,624 C:▂ D:81.4GB M:55.5GB 13686 DATA   : +-----------------------------------------------------------------------------+
+2018-12-04 10:48:05,625 C:▂ D:81.4GB M:55.5GB 13686 DATA   : | Processes:                                                       GPU Memory |
+2018-12-04 10:48:05,625 C:▂ D:81.4GB M:55.5GB 13686 DATA   : |  GPU       PID   Type   Process name                             Usage      |
+2018-12-04 10:48:05,625 C:▂ D:81.4GB M:55.5GB 13686 DATA   : |=============================================================================|
+2018-12-04 10:48:05,626 C:▂ D:81.4GB M:55.5GB 13686 DATA   : |  No running processes found                                                 |
+2018-12-04 10:48:05,626 C:▂ D:81.4GB M:55.5GB 13686 DATA   : +-----------------------------------------------------------------------------+
+2018-12-04 10:48:05,626 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 
+2018-12-04 10:48:05,651 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000      2248  0.0  0.0 225404 54892 ?        S    08:07   0:02  |       |   \_ /opt/h2oai/dai/python/bin/python3.6 /opt/h2oai/dai/python/bin/jupyter-notebook --ip=* --no-browser --allow-root
+2018-12-04 10:48:05,651 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000      2270  1.0  0.6 5484668 440076 ?      Sl   08:07   1:39  |       \_ h2oai-DriverlessAI
+2018-12-04 10:48:05,652 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000     13424  0.0  0.4 5287724 255988 ?      S    10:47   0:00  |       |   \_ h2oai-DriverlessAI
+2018-12-04 10:48:05,652 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000     13439  0.0  0.4 5304156 256020 ?      S    10:47   0:00  |       |   \_ h2oai-DriverlessAI
+2018-12-04 10:48:05,652 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000     13442  0.0  0.4 5320548 255900 ?      S    10:47   0:00  |       |   \_ h2oai-DriverlessAI
+2018-12-04 10:48:05,653 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000     13451  0.0  0.4 5320568 256048 ?      S    10:47   0:00  |       |   \_ h2oai-DriverlessAI
+2018-12-04 10:48:05,653 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000     13463  0.0  0.4 5353352 258136 ?      S    10:47   0:00  |       |   \_ h2oai-DriverlessAI
+2018-12-04 10:48:05,653 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000     13478  0.0  0.4 5353392 257988 ?      S    10:47   0:00  |       |   \_ h2oai-DriverlessAI
+2018-12-04 10:48:05,654 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000     13481  0.0  0.4 5369784 258020 ?      S    10:47   0:00  |       |   \_ h2oai-DriverlessAI
+2018-12-04 10:48:05,654 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000     13508  0.0  0.4 5369784 258020 ?      S    10:47   0:00  |       |   \_ h2oai-DriverlessAI
+2018-12-04 10:48:05,654 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000     13626  0.1  0.4 5369804 258164 ?      S    10:47   0:00  |       |   \_ h2oai-DriverlessAI
+2018-12-04 10:48:05,654 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000     13644  0.3  0.4 5419040 260136 ?      S    10:47   0:00  |       |   \_ h2oai-DriverlessAI
+2018-12-04 10:48:05,655 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000     13650  0.1  0.4 5435432 260164 ?      S    10:47   0:00  |       |   \_ h2oai-DriverlessAI
+2018-12-04 10:48:05,655 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000     13653  0.1  0.4 5435452 260312 ?      S    10:47   0:00  |       |   \_ h2oai-DriverlessAI
+2018-12-04 10:48:05,655 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000     13665  0.3  0.4 5451844 262372 ?      S    10:48   0:00  |       |   \_ h2oai-DriverlessAI
+2018-12-04 10:48:05,655 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000     13680  1.0  0.4 5468276 260336 ?      S    10:48   0:00  |       |   \_ h2oai-DriverlessAI
+2018-12-04 10:48:05,656 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000     13683  0.5  0.4 5484668 260404 ?      S    10:48   0:00  |       |   \_ h2oai-DriverlessAI
+2018-12-04 10:48:05,656 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000     13686  124  0.4 5265740 277312 ?      Sl   10:48   0:01  |       |   \_ h2oai-dilulole-auto_dl:finally
+2018-12-04 10:48:05,656 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000     13701  0.0  0.0  15128  3100 ?        S    10:48   0:00  |       |       \_ /bin/sh -c ps -auxwf | grep h2oai
+2018-12-04 10:48:05,656 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000     13703  0.0  0.0  12536  2260 ?        S    10:48   0:00  |       |           \_ grep h2oai
+2018-12-04 10:48:05,657 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000      2295  0.2  0.5 8265144 347172 ?      Sl   08:07   0:20  |       \_ /opt/h2oai/dai/jre/bin/java -Xmx5g -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -jar /opt/h2oai/dai/vis-server.jar -p 12346 -a 127.0.0.1
+2018-12-04 10:48:05,657 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000      2308  9.0  2.0 19884000 1270156 ?    Sl   08:07  14:30  |       \_ /opt/h2oai/dai/jre/bin/java -Xmx15351m -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -Ddai.tmp=./tmp -jar /opt/h2oai/dai/h2o.jar -ip 127.0.0.1 -web_ip 127.0.0.1 -name H2O-MLI-DAI-30539 -port 54321
+2018-12-04 10:48:05,657 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 1000      1471  0.0  0.0 347464 26624 ?        Sl   08:06   0:00 docker run --runtime=nvidia --init --rm --pid=host -e DRIVERLESS_AI_CONFIG_FILE=/config/config.toml -p 9050:9050 -p 9090:9090 -p 12345:12345 -p 54321:54321 -p 8888:8888 -u 1000:1000 -v /home/ubuntu/config:/config -v /home/ubuntu/data:/data -v /home/ubuntu/log:/log -v /home/ubuntu/tmp:/tmp -v /home/ubuntu/jupyter/notebooks:/jupyter/notebooks -v /home/ubuntu/license:/license -v /home/ubuntu/demo:/demo h2oai/dai-centos7-x86_64:1.4.1-9.0
+2018-12-04 10:48:05,658 C:▂ D:81.4GB M:55.5GB 13686 DATA   : 
+2018-12-04 10:48:05,661 C:▂ D:81.4GB M:55.5GB 13686 INFO   : Experiment: dilulole, 2018-12-04 10:48, 1.4.1
+2018-12-04 10:48:05,662 C:  D:81.4GB M:55.5GB 13686 INFO   :   Settings: 10/4/8, seed=545305355, GPUs enabled
+2018-12-04 10:48:05,664 C:  D:81.4GB M:55.5GB 13686 INFO   :   Train data: [XXXXX] None
+2018-12-04 10:48:05,665 C:  D:81.4GB M:55.5GB 13686 INFO   :   Validation data: N/A
+2018-12-04 10:48:05,666 C:▂ D:81.4GB M:55.5GB 13686 INFO   :   Test data: N/A
+2018-12-04 10:48:05,667 C:  D:81.4GB M:55.5GB 13686 INFO   : System specs: Docker/Linux, 60 GB, 4 CPU cores, 1/1 GPU
+2018-12-04 10:48:05,669 C:  D:81.4GB M:55.5GB 13686 INFO   :   Max memory usage: 0 GB, 0 GB GPU
+2018-12-04 10:48:05,670 C:  D:81.4GB M:55.5GB 13686 INFO   : Recipe: AutoDL (0 iterations, 8 individuals)
+2018-12-04 10:48:05,671 C:  D:81.4GB M:55.5GB 13686 INFO   : Experiment failed: Training data must contain at least 100 rows
+2018-12-04 10:48:05,673 C:  D:81.4GB M:55.5GB 13686 INFO   : 
+2018-12-04 10:48:05,674 C:  D:81.4GB M:55.5GB 13686 INFO   : 
+2018-12-04 10:48:05,675 C:  D:81.4GB M:55.5GB 13686 INFO   : 
+2018-12-04 10:48:05,680 C:  D:81.4GB M:55.5GB 13686 INFO   : Collecting logs
+2018-12-04 10:48:05,683 C:▂ D:81.4GB M:55.5GB 13686 INFO   : Archiving experiment summary to /opt/h2oai/dai/./tmp/h2oai_experiment_dilulole/h2oai_experiment_summary_dilulole.zip
+2018-12-04 10:48:05,686 C:  D:81.4GB M:55.5GB 13686 INFO   : Archiving logs to /opt/h2oai/dai/./tmp/h2oai_experiment_dilulole/h2oai_experiment_logs_dilulole.zip
