@@ -253,6 +253,29 @@ write.csv(make2p2i_test, 'make2p2i_test.csv',
 Starting cluster:
 
 ```{r}
+h2o.shutdown(prompt = FALSE)
 h2o.init()
+h2o.flow()
+```
+
+Training a gbm model (default settings), similar to Driverless AI.
+
+```{r}
+make2p2i_train_h2o <- as.h2o(make2p2i_train[,-1])
+
+gbm_model <- h2o.gbm(y = 'X15.9.F.12_qo_boepd',
+                    stopping_metric = "RMSE",
+                    training_frame = make2p2i_train_h2o,
+                    model_id = "gbm")
+summary(gbm_model)
+```
+
+AutoML (default settings) now:
+
+```{r}
+aml_model <- h2o.automl(y = 'X15.9.F.12_qo_boepd',
+                    stopping_metric = "RMSE",
+                    training_frame = make2p2i_train_h2o,
+                    max_runtime_secs = 1200)
 ```
 
