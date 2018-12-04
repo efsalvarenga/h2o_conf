@@ -183,15 +183,33 @@ I will try to forecast the oil production for the F-12 well based on the product
 
 ```{r}
 proj2p2i <- prod_data_2_boe %>%
+  group_by(Wellbore.name) %>%
+  mutate(Np = ifelse(is.na(cumsum(Oil)), 0, cumsum(Oil)),
+         Gp_i = ifelse(is.na(cumsum(Gas)), 0, cumsum(Gas)) -
+           ifelse(is.na(cumsum(GI)), 0, cumsum(GI)),
+         Wp_i = ifelse(is.na(cumsum(Water)), 0, cumsum(Water)) -
+           ifelse(is.na(cumsum(WI)), 0, cumsum(WI))) %>%
+  ungroup() %>%
   filter(mth_yr < as.Date('2013-07-01')) %>%
+  mutate() %>%
   select(mth_yr, Wellbore.name, On.Stream,
          qgp_boepd, qo_boepd, qwp_boepd,
-         qwi_boepd, qgi_boepd)
+         qwi_boepd, qgi_boepd,
+         Np, Gp_i, Wp_i)
 
 proj2p2i %>%
   gather(fluid, volume, -mth_yr, -Wellbore.name, -On.Stream) %>%
   ggplot(aes(x = mth_yr, y = volume)) +
   geom_point(aes(colour = fluid)) +
   facet_wrap(~Wellbore.name, ncol = 1, scales = 'free_y')
+```
+
+## Feature engineering
+
+```{r}
+proj2p2i %>%
+  group_by(Wellbore.name) %>%
+  mutate(Np = cumsum(qo_boepd) * 30)
+  gather(fluid, volume, -mth_yr, -Wellbore.name, -On.Stream) %>%
 ```
 
